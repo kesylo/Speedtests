@@ -1,0 +1,16 @@
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=BE
+
+network={
+        ssid="FAMOCO-5Ghz"
+        psk="famocoaccess"
+        priority=1
+}
+
+network={
+        ssid="FAMOCO"
+        psk="famocoaccess"
+        priority=2
+        key_mgmt=WPA-PSK
+}
